@@ -15,7 +15,7 @@ for i in range(1,n+1):
 #sum of square numbers
 else :
  n = int(input("enter the number"))
-def squaresum(n):
-    return(n*(n+1/2)*(2*n+1/3))
-    print(squaresum(n))
+ for i in range(0,n+1):
+     sum=sum+(i*i)
+     print(sum)
 
