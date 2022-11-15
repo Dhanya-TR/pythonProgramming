@@ -1,21 +1,28 @@
-#sum of cube numbers
-print("choice 1 is sum of cube numbers")
-print("choice 2 is sum of sqaure numbers")
-n=0
-choice=int(input("enter the choice"))
-if(choice==1):
 
- n=int(input("enter the number"))
-sum=0
-#iterating the loop up to the given number
-for i in range(1,n+1):
- #adding cube sum
- sum=sum+pow(i,3)
- print(sum)
-#sum of square numbers
-else :
- n = int(input("enter the number"))
- for i in range(0,n+1):
-     sum=sum+(i*i)
-     print(sum)
-
+print("choice 1 to find sum and average of squares")
+print("choice 2 to find sum and average of cubes")
+userinput=int(input("enter your choice"))
+if(userinput==1):
+ sum=0
+ square=0
+ print("please enter 10 numbers")
+ for i in range(1,11):
+     num=int(input("number %d="%i))
+     square=(num*num)
+     sum=sum+square
+     avg=sum/10
+     print("square=",square)
+     print("sum=",sum)
+     print("average=",avg)
+if(userinput==2):
+    sum=0
+    cube=0
+    print("please enter 10 numbers")
+for i in range(1,11):
+    num=int(input("number %d="%i))
+    cube=(num*num*num)
+    sum=sum+cube
+    avg=sum/10
+    print("cube=",cube)
+    print("sum=",sum)
+    print("average=",avg)
