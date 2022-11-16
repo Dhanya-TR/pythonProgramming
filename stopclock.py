@@ -1,5 +1,6 @@
 import time
-for i in range(10,0,-1):
+n=int(input("enter the seconds"))
+for i in range(n,0,-1):
     print(i)
     time.sleep(1)
 print("Time Up")
